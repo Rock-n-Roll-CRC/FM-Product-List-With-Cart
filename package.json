@@ -1,0 +1,71 @@
+{
+  "name": "fm-product-list-with-cart",
+  "version": "1.0.0",
+  "description": "Product list project that includes a functional cart.",
+  "source": "src/index.html",
+  "browserslist": "> 5%",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "staticFiles": {
+    "staticPath": "src/assets/images"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rock-n-Roll-CRC/FM-Product-List-With-Cart.git"
+  },
+  "keywords": [
+    "frontend-mentor",
+    "product-list",
+    "coding-challenge"
+  ],
+  "author": "Danil_Dikhtyar <danil.dikhtyar@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rock-n-Roll-CRC/FM-Product-List-With-Cart/issues"
+  },
+  "homepage": "https://github.com/Rock-n-Roll-CRC/FM-Product-List-With-Cart#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "@parcel/packager-raw-url": "^2.12.0",
+    "@parcel/transformer-sass": "^2.12.0",
+    "@parcel/transformer-webmanifest": "^2.12.0",
+    "@types/eslint__js": "^8.42.3",
+    "@types/uuid": "^10.0.0",
+    "eslint": "^9.10.0",
+    "husky": "^9.1.6",
+    "lint-staged": "^15.2.10",
+    "parcel": "^2.12.0",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "postcss": "^8.4.45",
+    "prettier": "3.3.3",
+    "sass": "^1.78.0",
+    "stylelint": "^16.9.0",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-recess-order": "^5.1.0",
+    "stylelint-config-sass-guidelines": "^12.0.0",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-declaration-block-no-ignored-properties": "^2.8.0",
+    "stylelint-declaration-strict-value": "^1.10.6",
+    "stylelint-high-performance-animation": "^1.10.0",
+    "stylelint-no-unsupported-browser-features": "^8.0.1",
+    "stylelint-plugin-defensive-css": "^1.0.4",
+    "stylelint-plugin-logical-css": "^1.2.1",
+    "stylelint-rem-over-px": "^1.0.1",
+    "typescript": "^5.6.2",
+    "typescript-eslint": "^8.5.0"
+  },
+  "dependencies": {
+    "uuid": "^10.0.0"
+  },
+  "overrides": {
+    "caniuse-lite": "1.0.30001653"
+  },
+  "type": "module"
+}

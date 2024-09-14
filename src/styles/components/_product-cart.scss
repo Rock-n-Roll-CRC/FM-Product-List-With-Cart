@@ -1,0 +1,33 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.product-cart {
+  @include flex-shorthand(column, 2.5rem, center);
+  @include max-inline-size-tweak(32.8rem);
+  @include logical-padding-shorthand(2.1rem, 0, 4rem);
+
+  border-radius: 1.2rem;
+  box-shadow: 0 0 1rem #0000000d;
+
+  &__title {
+    @include font-shorthand(2.4rem, 700);
+
+    align-self: stretch;
+    margin-inline-start: 2.45rem;
+    color: $color-primary-red;
+  }
+
+  &__icon-caption {
+    @include flex-shorthand(column, 0.5rem, center);
+  }
+
+  &__icon {
+    max-inline-size: 12.7rem;
+  }
+
+  &__caption {
+    @include font-shorthand(1.4rem, 600);
+
+    color: $color-rose-500;
+  }
+}

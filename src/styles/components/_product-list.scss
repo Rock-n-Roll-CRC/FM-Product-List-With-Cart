@@ -1,0 +1,18 @@
+@use "../tools" as *;
+
+.product-list {
+  @include flex-shorthand(column, 2.6rem);
+
+  max-inline-size: 32.7rem;
+
+  &__title {
+    @include font-shorthand(4rem, 700);
+  }
+
+  &__list {
+    @include flex-shorthand(column, 2.2rem);
+
+    padding: 0;
+    list-style: none;
+  }
+}

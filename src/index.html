@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="keywords"
+      content="Frontend Mentor, Product list with cart, Challenge solution"
+    />
+    <meta
+      name="description"
+      content='Danil_Dikhtyar&apos;s solution to the "Product list with cart" challenge designed by Frontend Mentor. The page contains a product list with a functional cart.'
+    />
+    <meta name="author" content="Danil_Dikhtyar" />
+
+    <!-- TODO: Add Open Graph / Twitter Card meta data later! -->
+
+    <!-- Webpage Title & Favicon Icons -->
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+
+    <!-- Linking Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Linking Styles -->
+    <link rel="stylesheet" href="./styles/main.scss" />
+
+    <!-- Linking Scripts -->
+    <script type="module" src="./scripts/index.ts"></script>
+  </head>
+
+  <body>
+    <main>
+      <article class="product-list">
+        <p class="product-list__title">Desserts</p>
+        <ul class="product-list__list"></ul>
+      </article>
+
+      <article class="product-cart">
+        <p class="product-cart__title">Your Cart (0)</p>
+        <div class="product-cart__icon-caption">
+          <svg class="product-cart__icon">
+            <use href="./assets/illustrations.svg#empty-cart" />
+          </svg>
+          <p class="product-cart__caption">Your added items will appear here</p>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+@use "../tools" as *;
+
+main {
+  @include flex-shorthand(column, 3.2rem, center);
+
+  padding: 1.8rem 0;
+}

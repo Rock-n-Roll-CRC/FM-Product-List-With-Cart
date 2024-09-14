@@ -1,0 +1,61 @@
+{
+  "extends": [
+    "stylelint-config-standard-scss",
+    "stylelint-config-recess-order",
+    "stylelint-config-sass-guidelines",
+    "stylelint-config-prettier-scss"
+  ],
+  "plugins": [
+    "stylelint-declaration-block-no-ignored-properties",
+    "stylelint-declaration-strict-value",
+    "stylelint-high-performance-animation",
+    "stylelint-no-unsupported-browser-features",
+    "stylelint-plugin-defensive-css",
+    "stylelint-plugin-logical-css",
+    "stylelint-rem-over-px"
+  ],
+  "rules": {
+    "plugin/declaration-block-no-ignored-properties": true,
+    "scale-unlimited/declaration-strict-value": [
+      ["font-family", "font-weight", "color", "background-color"],
+      { "expandShorthand": true, "recurseLonghand": true }
+    ],
+    "plugin/no-low-performance-animation-properties": true,
+    "plugin/no-unsupported-browser-features": [
+      true,
+      {
+        "severity": "warning",
+        "browsers": ["> 5%"]
+      }
+    ],
+    "plugin/use-defensive-css": [
+      true,
+      {
+        "severity": "warning",
+        "accidental-hover": true,
+        "background-repeat": true,
+        "custom-property-fallbacks": true,
+        "flex-wrapping": true,
+        "scroll-chaining": true,
+        "scrollbar-gutter": true,
+        "vendor-prefix-grouping": true
+      }
+    ],
+    "plugin/use-logical-properties-and-values": [
+      true,
+      { "severity": "warning" }
+    ],
+    "plugin/use-logical-units": [true, { "severity": "warning" }],
+    "rem-over-px/rem-over-px": [
+      true,
+      {
+        "ignore": ["1px"],
+        "ignoreFunctions": ["url"],
+        "ignoreAtRules": ["media"],
+        "fontSize": 10
+      }
+    ],
+    "@stylistic/string-quotes": "double",
+    "max-nesting-depth": 4
+  }
+}

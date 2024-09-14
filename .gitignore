@@ -1,0 +1,14 @@
+# Package Dependencies:
+node_modules/
+
+# Distribution Directory:
+dist/
+
+# Ignore Configs:
+.prettierignore
+
+# Cache Directory:
+.parcel-cache
+
+# Designs Directory:
+designs

@@ -1,0 +1,5 @@
+/* Dimensions Tweaks: */
+@mixin max-inline-size-tweak($max-inline-size) {
+  inline-size: 100%;
+  max-inline-size: $max-inline-size;
+}

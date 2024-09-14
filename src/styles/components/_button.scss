@@ -1,0 +1,71 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.button {
+  @include flex-shorthand(row, 0.7rem, center);
+  @include max-inline-size-tweak(16.09rem);
+  @include font-shorthand(1.4rem, 600);
+
+  padding: 1.05rem 0;
+  cursor: pointer;
+  border-radius: 100rem;
+  transition: all 0.15s;
+
+  &--hidden {
+    display: none;
+  }
+
+  &--type-add-to-cart {
+    @include color-shorthand($color-pure-black, $color-pure-white);
+
+    justify-content: center;
+    border: 0.1rem solid $color-rose-400;
+
+    @media (hover: hover) {
+      &:hover {
+        color: $color-primary-red;
+        border-color: $color-primary-red;
+      }
+    }
+  }
+
+  &--type-product-quantity {
+    @include color-shorthand($color-pure-white, $color-primary-red);
+
+    justify-content: space-around;
+    border: 0;
+  }
+
+  &__icon {
+    transition: all 0.15s;
+
+    &--type-add-to-cart {
+      @include max-size-shorthand(2.1rem, 2.1rem);
+    }
+
+    &--type-increment-quantity,
+    &--type-decrement-quantity {
+      @include max-size-shorthand(1.7rem, 1.7rem);
+
+      padding: 0.3rem;
+      border: 1px solid $color-pure-white;
+      border-radius: 50%;
+      fill: $color-pure-white;
+
+      @media (hover: hover) {
+        &:hover {
+          background-color: $color-pure-white;
+          fill: $color-primary-red;
+        }
+      }
+    }
+
+    &--type-increment-quantity {
+      order: 1;
+    }
+
+    &--type-decrement-quantity {
+      order: -1;
+    }
+  }
+}

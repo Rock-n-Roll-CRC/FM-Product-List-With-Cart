@@ -1,0 +1,42 @@
+@use "../settings" as *;
+@use "../tools" as *;
+
+.product {
+  @include flex-shorthand(column, 3.7rem);
+
+  &__image-box {
+    position: relative;
+  }
+
+  &__image {
+    border-radius: 0.8rem;
+  }
+
+  &__button {
+    @include absolute-shorthand($inset-block-end: 0, $inset-inline-start: 50%);
+
+    transform: translate(-50%, 50%);
+  }
+
+  &__text-content {
+    @include flex-shorthand(column, 0.15rem);
+  }
+
+  &__category {
+    font-size: 1.4rem;
+    color: $color-rose-400;
+  }
+
+  &__name,
+  &__price {
+    @include font-shorthand($font-size-product-name, 600);
+  }
+
+  &__name {
+    color: $color-rose-900;
+  }
+
+  &__price {
+    color: $color-primary-red;
+  }
+}

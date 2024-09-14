@@ -1,0 +1,9 @@
+@use "../settings" as *;
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font: $font-weight-regular 1rem / 1.5 $font-family-sans-serif;
+}
