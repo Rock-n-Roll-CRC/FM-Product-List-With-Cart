@@ -36,6 +36,13 @@
     border: 0;
   }
 
+  &--type-increment-quantity,
+  &--type-decrement-quantity {
+    max-inline-size: fit-content;
+    padding: 0;
+    border: 0;
+  }
+
   &__icon {
     transition: all 0.15s;
 
@@ -48,6 +55,7 @@
       @include max-size-shorthand(1.7rem, 1.7rem);
 
       padding: 0.3rem;
+      background-color: $color-primary-red;
       border: 1px solid $color-pure-white;
       border-radius: 50%;
       fill: $color-pure-white;
